@@ -24,8 +24,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <NAV_L NUM_L>;
-            then-layer = <SYM_L>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
