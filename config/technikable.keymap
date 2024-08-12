@@ -45,9 +45,9 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans    &trans          &trans        &trans           &kp DEL
-&kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE    &trans        &trans        &trans                &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans           &trans             &trans        &trans        &trans        &trans                &trans  &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &trans
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans    &trans          &trans        &trans           &kp DEL
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &trans        &trans        &trans                &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans             &trans           &trans        &trans        &trans        &trans                &trans  &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &trans
                                     &trans        &trans        &trans        &trans        &trans  &to 0   &trans    &trans
             >;
         };
@@ -56,7 +56,7 @@
             label = "Num";
             bindings = <
 &kp GRAVE  &trans  &kp N7  &kp N8  &kp N9  &trans         &kp MINUS             &kp EQUAL              &trans            &trans             &trans         &trans
-&trans     &trans  &kp N4  &kp N5  &kp N6  &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans     &trans  &kp N4  &kp N5  &kp N6  &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp SLASH
 &trans     &trans  &kp N1  &kp N2  &kp N3  &trans         &trans                &trans                 &trans            &trans             &trans         &trans
                    &trans  &kp N0  &trans  &none   &none  &to 0                 &trans                 &trans
             >;
