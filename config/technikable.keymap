@@ -31,6 +31,15 @@
         };
     };
 
+    behaviors {
+        numpad_1: numpad_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NUMPAD_1";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp N1>, <&kp EXCL>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
