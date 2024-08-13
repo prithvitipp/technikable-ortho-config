@@ -36,56 +36,56 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ONETAP";
             #binding-cells = <0>;
-            bindings = <&kp N1>, <&kp EXCL>;
+            bindings = <&kp X>, <&kp N1>, <&kp EXCLAMATION>;
         };
 
         twotap: twotap {
             compatible = "zmk,behavior-tap-dance";
             label = "TWOTAP";
             #binding-cells = <0>;
-            bindings = <&kp N2>, <&kp AT>;
+            bindings = <&kp C>, <&kp N2>, <&kp AT>;
         };
 
         threetap: threetap {
             compatible = "zmk,behavior-tap-dance";
             label = "THREETAP";
             #binding-cells = <0>;
-            bindings = <&kp N3>, <&kp POUND>;
+            bindings = <&kp V>, <&kp N3>, <&kp POUND>;
         };
 
         fourtap: fourtap {
             compatible = "zmk,behavior-tap-dance";
             label = "FOURTAP";
             #binding-cells = <0>;
-            bindings = <&kp N4>, <&kp DOLLAR>;
+            bindings = <&kp S>, <&kp N4>, <&kp DOLLAR>;
         };
 
         fivetap: fivetap {
             compatible = "zmk,behavior-tap-dance";
             label = "FIVETAP";
             #binding-cells = <0>;
-            bindings = <&kp N5>, <&kp PERCENT>;
+            bindings = <&kp D>, <&kp N5>, <&kp PERCENT>;
         };
 
         sixtap: sixtap {
             compatible = "zmk,behavior-tap-dance";
             label = "SIXTAP";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_6>, <&kp CARET>;
+            bindings = <&kp F>, <&kp N6>, <&kp CARET>;
         };
 
         seventap: seventap {
             compatible = "zmk,behavior-tap-dance";
             label = "SEVENTAP";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp AMPERSAND>;
+            bindings = <&kp W>, <&kp N7>, <&kp AMPERSAND>;
         };
 
         eightap: eightap {
             compatible = "zmk,behavior-tap-dance";
             label = "EIGHTAP";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp ASTERISK>;
+            bindings = <&kp R>, <&kp N8>, <&kp STAR>;
         };
     };
 
@@ -95,10 +95,10 @@
         base_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC        &kp Q  &kp W         &kp E     &kp R  &kp T                 &kp Y  &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
-&mt LCTRL TAB  &kp A  &kp S         &kp D     &kp F  &kp G                 &kp H  &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X         &kp C     &kp V  &kp B                 &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                      &kp LEFT_GUI  &kp LALT  &mo 1  &kp SPACE  &kp SPACE  &mo 2  &kp LEFT_META  &tog 0
+&kp ESC        &kp Q  &seventap     &eightap  &kp R      &kp T                 &kp Y  &kp U          &kp I      &kp O    &kp P     &kp BACKSPACE
+&mt LCTRL TAB  &kp A  &fourtap      &fivetap  &sixtap    &kp G                 &kp H  &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z  &onetap       &twotap   &threetap  &kp B                 &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                      &kp LEFT_GUI  &kp LALT  &mo 1      &kp SPACE  &kp SPACE  &mo 2  &kp LEFT_META  &tog 0
             >;
         };
 
@@ -115,10 +115,10 @@
         Num {
             label = "NUM_RAISE";
             bindings = <
-&kp GRAVE  &trans  &seventap  &eightap  &kp N9     &trans            &trans     &trans                &trans                 &trans            &trans             &trans
-&trans     &trans  &fourtap   &fivetap  &sixtap    &kp MINUS         &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans     &trans  &onetap    &twotap   &threetap  &trans            &trans     &trans                &trans                 &trans            &trans             &trans
-                   &trans     &kp N0    &trans     &none      &none  &trans     &trans                &trans
+&kp GRAVE  &trans  &kp N7  &kp N8  &kp N9  &trans            &trans     &trans                &trans                 &trans            &trans             &trans
+&trans     &trans  &kp N4  &kp N5  &kp N6  &kp MINUS         &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&trans     &trans  &kp N1  &kp N2  &kp N3  &trans            &trans     &trans                &trans                 &trans            &trans             &trans
+                   &trans  &kp N0  &trans  &none      &none  &trans     &trans                &trans
             >;
         };
     };
