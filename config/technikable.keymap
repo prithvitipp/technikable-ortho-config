@@ -136,10 +136,10 @@
         Num {
             label = "NUM_RAISE";
             bindings = <
-&kp GRAVE  &trans  &seventap  &eightap  &kp N9     &trans                  &trans          &trans                &trans                 &trans            &trans             &trans
+&kp GRAVE  &trans  &seventap  &eightap  &kp N9     &kp N0                  &trans          &trans                &trans                 &trans            &trans             &trans
 &trans     &trans  &fourtap   &fivetap  &sixtap    &minus_tapdance         &plus_tapdance  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
 &trans     &trans  &onetap    &twotap   &threetap  &trans                  &trans          &trans                &trans                 &trans            &trans             &trans
-                   &trans     &kp N0    &trans     &none            &none  &trans          &trans                &trans
+                   &trans     &trans    &trans     &none            &none  &trans          &trans                &trans
             >;
         };
     };
