@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define BAS_L 0
 #define NAV_L 1
@@ -126,10 +127,10 @@
         Nav {
             label = "NAV_LOWER";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &trans    &trans          &trans        &trans           &bootloader
-&trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &trans        &trans                &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans      &trans             &trans           &trans        &trans        &trans                &trans  &kp HOME  &kp PG_DN       &kp PG_UP     &kp END          &kp DELETE
-                               &trans           &trans        &trans        &trans        &trans  &trans  &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans        &trans        &trans          &trans        &trans           &trans
+&trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &trans        &trans                &trans        &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans      &trans             &trans           &trans        &trans        &trans                &trans        &kp HOME      &kp PG_DN       &kp PG_UP     &kp END          &kp DELETE
+                               &trans           &trans        &trans        &trans        &trans  &out OUT_USB  &out OUT_BLE  &bootloader
             >;
         };
 
